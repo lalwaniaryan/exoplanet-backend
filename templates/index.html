@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exoplanet Habitability Prediction</title>
+</head>
+<body>
+    <h1>Exoplanet Habitability Predictor</h1>
+    <form method="POST" action="/predict">
+        {% for feature in features %}
+            <label>{{ feature }}</label><br>
+            <input type="text" name="{{ feature }}" required><br><br>
+        {% endfor %}
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
