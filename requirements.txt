@@ -1,7 +1,7 @@
 # Core application dependencies:
 Flask==3.1.1
 Flask-Cors==4.0.0
-tensorflow==2.19.0
+tensorflow-cpu==2.19.0
 keras==3.10.0
 # scikeras 0.13.0 is the latest stable version and compatible with Keras 3.x and scikit-learn 1.7.0
 scikeras==0.13.0
@@ -10,7 +10,7 @@ pandas==2.2.2
 numpy==2.1.3
 lime==0.2.0.1
 requests==2.32.4
-gunicorn==22.0.0 # Essential for running Flask apps on Render (or other production servers)
+gunicorn>=20.1.0 # Essential for running Flask apps on Render (or other production servers)
 
 # Transitive dependencies (keeping these helps ensure exact reproducibility)
 absl-py==2.3.0
